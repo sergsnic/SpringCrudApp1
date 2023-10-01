@@ -5,7 +5,7 @@
     <title>Все люди</title>
 </head>
 <body>
-
+<!--Реализован цикл с выводом ссылок для перехода и названий полей имен-->
 <div th:each="person : ${people}">
     <a th:href="@{/people/{id}(id=${person.getId()})}" th:text="${person.getName()}">user</a>
 </div>
